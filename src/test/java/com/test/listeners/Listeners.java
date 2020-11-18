@@ -1,10 +1,15 @@
 package com.test.listeners;
 
+import java.io.IOException;
+
+import org.com.base.Testbase;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 public class Listeners implements ITestListener {
+	
+	Testbase tb;
 
 	@Override
 	public void onTestStart(ITestResult result) {
@@ -25,6 +30,16 @@ public class Listeners implements ITestListener {
 		System.out.println("Test Failed");
 		System.out.println(result.getClass());
 		System.out.println(result.getMethod());
+		
+		try {
+			tb= new Testbase();
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
 		
 	}
 

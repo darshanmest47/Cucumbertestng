@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-18T12:14:00Z" name="Suite" finished-at="2020-11-18T12:15:40Z" duration-ms="99855">
+  <suite started-at="2020-11-18T12:37:15Z" name="Suite" finished-at="2020-11-18T12:38:54Z" duration-ms="99820">
     <groups>
     </groups>
-    <test started-at="2020-11-18T12:14:00Z" name="Test" finished-at="2020-11-18T12:15:40Z" duration-ms="99855">
+    <test started-at="2020-11-18T12:37:15Z" name="Test" finished-at="2020-11-18T12:38:54Z" duration-ms="99820">
       <class name="org.com.test.Testrunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:org.com.test.Testrunner@3d246ea3]" started-at="2020-11-18T12:14:00Z" name="setUpClass" finished-at="2020-11-18T12:14:00Z" duration-ms="225" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:org.com.test.Testrunner@3d246ea3]" started-at="2020-11-18T12:37:15Z" name="setUpClass" finished-at="2020-11-18T12:37:15Z" duration-ms="175" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:org.com.test.Testrunner@3d246ea3]" started-at="2020-11-18T12:14:00Z" name="feature" data-provider="features" finished-at="2020-11-18T12:14:50Z" duration-ms="50048" status="FAIL">
+        <test-method signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:org.com.test.Testrunner@3d246ea3]" started-at="2020-11-18T12:37:15Z" name="feature" data-provider="features" finished-at="2020-11-18T12:38:05Z" duration-ms="49989" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -31,8 +31,8 @@
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'DESKTOP-QM44KM9', ip: '192.168.43.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Darshan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53745}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 1a1fb187c3ef852b60fb650b85fe27e3]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Darshan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54128}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9b0e083500d728f97fe5032bc3192045]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
@@ -40,8 +40,8 @@ Session ID: 1a1fb187c3ef852b60fb650b85fe27e3]]>
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'DESKTOP-QM44KM9', ip: '192.168.43.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Darshan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53745}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 1a1fb187c3ef852b60fb650b85fe27e3
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Darshan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54128}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9b0e083500d728f97fe5032bc3192045
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -54,7 +54,7 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:273)
-at org.com.base.Testbase.initialize(Testbase.java:33)
+at org.com.base.Testbase.initialize(Testbase.java:37)
 at Step_defs.Stepdefs.user_is_already_on_the_ninja_page(Stepdefs.java:51)
 at ✽.User is already on the Ninja Page(./Features/first.feature:5)
 ]]>
@@ -63,7 +63,7 @@ at ✽.User is already on the Ninja Page(./Features/first.feature:5)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:org.com.test.Testrunner@3d246ea3]" started-at="2020-11-18T12:14:50Z" name="feature" data-provider="features" finished-at="2020-11-18T12:15:39Z" duration-ms="49210" status="FAIL">
+        <test-method signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:org.com.test.Testrunner@3d246ea3]" started-at="2020-11-18T12:38:05Z" name="feature" data-provider="features" finished-at="2020-11-18T12:38:54Z" duration-ms="49060" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -83,8 +83,8 @@ at ✽.User is already on the Ninja Page(./Features/first.feature:5)
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'DESKTOP-QM44KM9', ip: '192.168.43.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Darshan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53815}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: ab36757661f6f87157c6212534f40a66]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Darshan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: dfb32417de4c13f1dc50eab8371b444f]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
@@ -92,8 +92,8 @@ Session ID: ab36757661f6f87157c6212534f40a66]]>
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'DESKTOP-QM44KM9', ip: '192.168.43.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Darshan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53815}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: ab36757661f6f87157c6212534f40a66
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Darshan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: dfb32417de4c13f1dc50eab8371b444f
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -106,7 +106,7 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:273)
-at org.com.base.Testbase.initialize(Testbase.java:33)
+at org.com.base.Testbase.initialize(Testbase.java:37)
 at Step_defs.Stepdefs.user_is_already_on_the_ninja_page(Stepdefs.java:51)
 at ✽.User is already on the Ninja Page(./Features/first.feature:9)
 ]]>
@@ -115,7 +115,7 @@ at ✽.User is already on the Ninja Page(./Features/first.feature:9)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:org.com.test.Testrunner@3d246ea3]" started-at="2020-11-18T12:15:39Z" name="tearDownClass" finished-at="2020-11-18T12:15:40Z" duration-ms="261" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:org.com.test.Testrunner@3d246ea3]" started-at="2020-11-18T12:38:54Z" name="tearDownClass" finished-at="2020-11-18T12:38:54Z" duration-ms="504" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
