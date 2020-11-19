@@ -7,6 +7,7 @@ import org.com.pages.Confirmpage;
 import org.com.pages.Loginpage;
 import org.com.pages.Myaccpage;
 import org.com.pages.Registerpage;
+import org.testng.Assert;
 
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -14,7 +15,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import junit.framework.Assert;
+
 
 
 public class Stepdefs extends Testbase {
@@ -28,10 +29,11 @@ public class Stepdefs extends Testbase {
 	 Confirmpage cp;
 	 Myaccpage myacc;
 	 
-	 @After
-	 public void closeEverything() {
-		 teardown();
-	 }
+//	 @After
+//	 public void closeEverything() throws InterruptedException {
+//		
+//		 teardown();
+//	 }
 	 
 	 @After("@smoke")
 	 public void closeSmoke(){
@@ -92,6 +94,7 @@ public class Stepdefs extends Testbase {
 	    @Then("^User must be able to able to click on Register button$")
 	    public void user_must_be_able_to_able_to_click_on_register_button()  {
 	    	System.out.println("User is able to click on register");
+	    	
 	        
 	    }
 

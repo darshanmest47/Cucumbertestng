@@ -7,19 +7,30 @@ import javax.net.ssl.SSLEngineResult.Status;
 import org.com.base.Testbase;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
+import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+import com.test.utilities.ExtentReporter;
+import com.test.utilities.Takescreenshot;
 
-public class Listeners implements ITestListener {
+public class Listeners extends Testbase  implements ITestListener {
 	
-	Testbase tb;
-	ExtentHtmlReporter reporter;
-	ExtentReports reports;
-	ExtentTest test;
+  public Listeners() throws IOException {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+Takescreenshot ts;
+ ExtentTest test;
+ 
+ ExtentReports extent;
+ 
+ThreadLocal<ExtentTest> et = new ThreadLocal<ExtentTest>();
+
 	
 
 	@Override
@@ -27,6 +38,13 @@ public class Listeners implements ITestListener {
 	
 		
 		System.out.println("Test started");
+		ExtentReporter ext =new ExtentReporter();
+		extent = ext.extentgenerator();
+		
+		test = extent.createTest("Start test");
+		et.set(test);
+		
+		
 
 		
 	
@@ -36,7 +54,10 @@ public class Listeners implements ITestListener {
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
 		System.out.println("Test success");
-     
+		
+		et.get().info("Test-Succeeded");
+		driver.quit();
+	
 		
 		
 	}
@@ -44,13 +65,25 @@ public class Listeners implements ITestListener {
 	@Override
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
-		System.out.println("Test Failed");
-		System.out.println(result.getClass());
-		System.out.println(result.getMethod());
 		
-		try {
-			tb= new Testbase();
-			
+		String resname = result.getName();
+		
+		
+		System.out.println("Test Failed");
+	   System.out.println(resname);
+	   System.out.println(result.getThrowable());
+	   System.out.println(result.getTestName());
+		
+         try {
+        	
+        	 ts= new Takescreenshot();
+        	 String ptname = ts.screenCapture(resname);
+        	
+        	 et.get().addScreenCaptureFromPath(ptname, resname);
+        	 driver.quit();
+        	 
+        	
+		
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -85,6 +118,8 @@ public class Listeners implements ITestListener {
 	public void onFinish(ITestContext context) {
 		// TODO Auto-generated method stub
 		System.out.println("finish");
+		extent.flush();
+
 		
 		
 	}
