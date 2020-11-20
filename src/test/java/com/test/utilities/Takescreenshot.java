@@ -22,7 +22,7 @@ public class Takescreenshot extends Testbase {
 		
 		System.out.println("--------------------------");
 		System.out.println("Taking screenshots");
-		String path = "./Screenshots/"+pathname+".png";
+		String path = "./Screenshot/"+pathname+".png";
 		System.out.println(path);
 		
 		TakesScreenshot ts = ((TakesScreenshot)driver);

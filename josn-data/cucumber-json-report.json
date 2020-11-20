@@ -10,7 +10,7 @@
         "after": [
           {
             "result": {
-              "duration": 208200,
+              "duration": 56600,
               "status": "passed"
             },
             "match": {
@@ -23,7 +23,7 @@
         "steps": [
           {
             "result": {
-              "duration": 20605987700,
+              "duration": 20874585400,
               "status": "passed"
             },
             "line": 5,
@@ -35,7 +35,7 @@
           },
           {
             "result": {
-              "duration": 167800,
+              "duration": 72600,
               "status": "passed"
             },
             "line": 6,
@@ -62,7 +62,7 @@
         "steps": [
           {
             "result": {
-              "duration": 12928003900,
+              "duration": 16253991500,
               "status": "passed"
             },
             "line": 9,
@@ -74,7 +74,7 @@
           },
           {
             "result": {
-              "duration": 82560900,
+              "duration": 1266832100,
               "status": "passed"
             },
             "line": 10,
@@ -86,7 +86,7 @@
           },
           {
             "result": {
-              "duration": 429100,
+              "duration": 137700,
               "status": "passed"
             },
             "line": 11,
@@ -98,7 +98,7 @@
           },
           {
             "result": {
-              "duration": 13640780900,
+              "duration": 12778031800,
               "status": "passed"
             },
             "line": 12,
@@ -110,7 +110,7 @@
           },
           {
             "result": {
-              "duration": 6021470200,
+              "duration": 6428480200,
               "status": "passed"
             },
             "line": 13,
@@ -148,7 +148,7 @@
           },
           {
             "result": {
-              "duration": 5071030400,
+              "duration": 5133059700,
               "status": "passed"
             },
             "line": 14,
@@ -160,7 +160,7 @@
           },
           {
             "result": {
-              "duration": 3194121100,
+              "duration": 1029826800,
               "status": "passed"
             },
             "line": 15,
@@ -173,7 +173,7 @@
           {
             "result": {
               "error_message": "java.lang.AssertionError: expected [Your Account Has Been Created!] but found [Register Account]\r\n\tat org.testng.Assert.fail(Assert.java:96)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:137)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:453)\r\n\tat org.testng.Assert.assertEquals(Assert.java:463)\r\n\tat Step_defs.Stepdefs.user_is_on_the_account_confirmation_page(Stepdefs.java:67)\r\n\tat ✽.User is on the Account confirmation page(./Features/first.feature:16)\r\n",
-              "duration": 27989700,
+              "duration": 30820700,
               "status": "failed"
             },
             "line": 16,
@@ -185,7 +185,7 @@
           },
           {
             "result": {
-              "duration": 11700,
+              "duration": 40400,
               "status": "skipped"
             },
             "line": 17,
@@ -197,7 +197,7 @@
           },
           {
             "result": {
-              "duration": 3000,
+              "duration": 247500,
               "status": "skipped"
             },
             "line": 18,
@@ -209,7 +209,7 @@
           },
           {
             "result": {
-              "duration": 2500,
+              "duration": 5100,
               "status": "skipped"
             },
             "line": 19,

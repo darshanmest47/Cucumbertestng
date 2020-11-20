@@ -2,15 +2,17 @@ package com.test.utilities;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentEmailReporter;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class ExtentReporter {
-	ExtentHtmlReporter reporter;
-	ExtentReports extent;
+	static ExtentHtmlReporter reporter;
+	static ExtentReports extent;
 
 	
-	public ExtentReports extentgenerator() {
+	public static ExtentReports extentgenerator() {
 		String rep = "./Reports/extent-report.html";
 		
 		reporter =new ExtentHtmlReporter(rep);
@@ -18,7 +20,7 @@ public class ExtentReporter {
 		reporter.config().setTheme(Theme.DARK);
 		reporter.config().setReportName("Testreport");
 		
-		reporter.start();
+	
 	
 		extent = new ExtentReports();
 		extent.attachReporter(reporter);

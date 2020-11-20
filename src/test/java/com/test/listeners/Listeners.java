@@ -12,7 +12,8 @@ import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.MediaEntityBuilder;
+
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.test.utilities.ExtentReporter;
 import com.test.utilities.Takescreenshot;
@@ -25,26 +26,24 @@ public class Listeners extends Testbase  implements ITestListener {
 	}
 
 Takescreenshot ts;
- ExtentTest test;
- 
- ExtentReports extent;
- 
-ThreadLocal<ExtentTest> et = new ThreadLocal<ExtentTest>();
 
+ 
+ ExtentReports extent = ExtentReporter.extentgenerator();
+ ExtentTest test;
+ ThreadLocal<ExtentTest> th;
+ 
 	
 
 	@Override
 	public void onTestStart(ITestResult result) {
 	
-		
+		th= new ThreadLocal<ExtentTest>();
 		System.out.println("Test started");
-		ExtentReporter ext =new ExtentReporter();
-		extent = ext.extentgenerator();
+		test = extent.createTest(result.getName()+"Test started");
+		th.set(test);
 		
-		test = extent.createTest("Start test");
-		et.set(test);
-		
-		
+	
+
 
 		
 	
@@ -54,9 +53,9 @@ ThreadLocal<ExtentTest> et = new ThreadLocal<ExtentTest>();
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
 		System.out.println("Test success");
-		
-		et.get().info("Test-Succeeded");
+		th.get().info("Success");
 		driver.quit();
+	
 	
 		
 		
@@ -73,13 +72,15 @@ ThreadLocal<ExtentTest> et = new ThreadLocal<ExtentTest>();
 	   System.out.println(resname);
 	   System.out.println(result.getThrowable());
 	   System.out.println(result.getTestName());
-		
+       
          try {
         	
         	 ts= new Takescreenshot();
         	 String ptname = ts.screenCapture(resname);
+        	System.out.println(ptname);
         	
-        	 et.get().addScreenCaptureFromPath(ptname, resname);
+             th.get().fail(result.getThrowable(), MediaEntityBuilder.createScreenCaptureFromPath(ptname).build());
+//             th.get().addScreenCaptureFromPath(ptname);
         	 driver.quit();
         	 
         	
@@ -119,7 +120,8 @@ ThreadLocal<ExtentTest> et = new ThreadLocal<ExtentTest>();
 		// TODO Auto-generated method stub
 		System.out.println("finish");
 		extent.flush();
-
+		
+		
 		
 		
 	}

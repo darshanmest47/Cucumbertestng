@@ -20,21 +20,22 @@
 	<build>
 		<plugins>
 	<plugin>
-		<groupId>org.apache.maven.plugins</groupId>
+		<groupId>org.apache.maven.plugins:maven-compiler-plugin</groupId>
 		<artifactId>maven-compiler-plugin</artifactId>
-		<version>3.7.0</version>
+		<version>3.8.1</version>
 		<configuration>
 			<source>1.8</source>
 			<target>1.8</target>
 			<encoding>UTF-8</encoding>
 		</configuration>
+
 	</plugin>
 
 	<plugin>
-		<groupId>org.apache.maven.plugins</groupId>
+		<groupId>org.apache.maven.plugins:maven-surefire-plugin</groupId>
 		<artifactId>maven-surefire-plugin</artifactId>
-		<version>3.0.0-M1</version>		<!--<version>3.7.0</version> -->
-		<configuration>
+		<version>3.0.0-M5</version>		<!--<version>3.7.0</version> -->
+	<configuration>
 			<suiteXmlFiles>
 				<suiteXmlFile>${SuiteXmlFile}</suiteXmlFile>				
 			</suiteXmlFiles>		
@@ -166,6 +167,10 @@
 			<artifactId>extentreports</artifactId>
 			<version>4.0.6</version>
 		</dependency>
+		
+		
+
+		
 		
 		<dependency>
 			<groupId>org.freemarker</groupId>
