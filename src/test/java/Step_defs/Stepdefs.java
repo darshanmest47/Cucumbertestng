@@ -29,11 +29,11 @@ public class Stepdefs extends Testbase {
 	 Confirmpage cp;
 	 Myaccpage myacc;
 	 
-// 	 @After
-// 	 public void closeEverything() throws InterruptedException {
+ 	 @After
+	 public void closeEverything() throws InterruptedException {
 		
-// 		 teardown();
-// 	 }
+ 		 teardown();
+ 	 }
 	 
 	 @After("@smoke")
 	 public void closeSmoke(){
