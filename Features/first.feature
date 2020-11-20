@@ -21,7 +21,7 @@ Scenario Outline: To Register user
 	
 	Examples:
 	| fname | lname | email | phone | password | cnfpass |
-	| Dboss47 | Great | Dbossgreat47@xyz.com |8408718271| DarshanKA47 | DarshanKA47 |
+	| Dboss47123 | Great123 | Dbossgreat47123@xyz.com |8408718271| DarshanKA47 | DarshanKA47 |
 	
 
 
