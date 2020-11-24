@@ -20,7 +20,7 @@ public class Loginpage extends Testbase {
 	}
 
 
-
+	Myaccpage mpage;
 
 
 
@@ -35,6 +35,15 @@ public class Loginpage extends Testbase {
 	
 	@FindBy(xpath="//ul[contains(@class,'dropdown-menu-right')]/li/a[text()='Login']")
 	WebElement login;
+	
+	@FindBy(xpath="//input[@name='email']")
+	WebElement email;
+	
+	@FindBy(xpath="//input[@name='password']")
+	WebElement pwd;
+	
+	@FindBy(xpath="//input[@type='submit']")
+	WebElement submit;
 	
 	
 	Actions act = new Actions(driver);
@@ -68,6 +77,21 @@ public class Loginpage extends Testbase {
 	public void clickLogin() {
 		wt.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//ul[contains(@class,'dropdown-menu-right')]/li/a[text()='Login']")));
 		login.click();
+	}
+	
+	public void enterEmail(String email1) {
+		email.sendKeys(email1);
+		
+	}
+	
+	public void enterPassword(String pwd1) {
+		pwd.sendKeys(pwd1);
+	}
+	
+	public Myaccpage clickSubmit() throws IOException {
+		submit.click();
+		mpage=new Myaccpage();
+		return mpage;
 	}
 	
 	

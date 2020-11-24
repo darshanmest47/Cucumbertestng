@@ -46,6 +46,11 @@ public class Myaccpage extends Testbase {
 		return acclg;
 	}
 	
+	public String getTitleacc() {
+		return driver.getTitle();
+	}
+	
+	
 	
 	
 

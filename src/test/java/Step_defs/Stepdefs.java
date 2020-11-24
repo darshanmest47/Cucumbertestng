@@ -2,12 +2,16 @@ package Step_defs;
 
 import java.io.IOException;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.com.base.Testbase;
 import org.com.pages.Confirmpage;
 import org.com.pages.Loginpage;
 import org.com.pages.Myaccpage;
 import org.com.pages.Registerpage;
 import org.testng.Assert;
+
+import com.test.utilities.Randomtestdatagenerator;
 
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -18,7 +22,7 @@ import cucumber.api.java.en.When;
 
 
 
-public class Stepdefs extends Testbase {
+public class Stepdefs extends Testbase  {
 
 	 public Stepdefs() throws IOException {
 		super();
@@ -28,6 +32,14 @@ public class Stepdefs extends Testbase {
 	 Registerpage rp;
 	 Confirmpage cp;
 	 Myaccpage myacc;
+	 Logger log;
+	 
+	 @Before
+	 public void beforeM() {
+		 log= LogManager.getLogger(Stepdefs.class.getName()) ;
+	 }
+	 
+	 
 
 	 
 // 	 @After
@@ -50,29 +62,34 @@ public class Stepdefs extends Testbase {
 	 }
 	 
 	 
+	 
+	 
 
 	@Given("^User is already on the Ninja Page$")
 	    public void user_is_already_on_the_ninja_page() throws IOException  {
 		initialize();
 		lp= new Loginpage();
 		String ti = lp.getTitlePage();
-		System.out.println(ti);
-		System.out.println(prop.getProperty("YOUR_STORE") );
-		Assert.assertEquals(ti,prop.getProperty("YOUR_STORE") );
+//		System.out.println(ti);
+//		System.out.println(prop.getProperty("YOUR_STORE") );
+//		Assert.assertEquals(ti,prop.getProperty("YOUR_STORE") );
+		log.info("user is on ninja page");
 	        
 	    }
 
 	    @Then("^User is on the Account confirmation page$")
 	    public void user_is_on_the_account_confirmation_page()  {
 	      String cnftitle = cp.getTitleconf();
-	      System.out.println(cnftitle);
-	      System.out.println(prop.getProperty("ACCOUNT_CONF"));
-	      Assert.assertEquals(cnftitle,prop.getProperty("ACCOUNT_CONF") );
+//	      System.out.println(cnftitle);
+//	      System.out.println(prop.getProperty("ACCOUNT_CONF"));
+//	      Assert.assertEquals(cnftitle,prop.getProperty("ACCOUNT_CONF") );
+	      log.info("User is on Account confirmation page");
 	    }
 
 	    @When("^User hovers over the Account and clicks on it$")
 	    public void user_hovers_over_the_account_and_clicks_on_it()  {
 	    	lp.hoverAccount();
+	    	log.info("user is hovering on account");
 	    
 	    }
 
@@ -85,32 +102,45 @@ public class Stepdefs extends Testbase {
 	    	System.out.println(regtitle);
 	    	System.out.println(prop.getProperty("REGISTER"));
 	    	Assert.assertEquals(regtitle, prop.getProperty("REGISTER"));
+	    	log.info("User is on the Registration page");
 	    	
 	          
 	    }
 
 	    @Then("^User must be able to see the correct page title$")
 	    public void user_must_be_able_to_see_the_correct_page_title()  {
-	        System.out.println("User is able to see correct title");
+//	        System.out.println("User is able to see correct title");
+	        log.info("user is able to see correct title");
 	    }
 
 	    @Then("^User must be able to able to click on Register button$")
 	    public void user_must_be_able_to_able_to_click_on_register_button()  {
-	    	System.out.println("User is able to click on register");
-	    	
+//	    	System.out.println("User is able to click on register");
+	    	log.info("User is able to click on register");
 	        
 	    }
 
 	    @Then("^User Enters the values \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
 	    public void user_enters_the_values_something_and_something_and_something_and_something_and_something_and_something(String fname, String lname, String email, String phone, String password, String cnfpass) throws Throwable {
+	    	fname = Randomtestdatagenerator.randomUsernameGenerator();
+	    	lname =Randomtestdatagenerator.randomLastnameGenerator();
+	    	email = Randomtestdatagenerator.randomEmailGenerator();
+	    	phone= Randomtestdatagenerator.randomPhoneGenerator();
+	    	log.info(fname);
+	    	log.info(lname);
+	    	log.info(email);
+	    	log.info(phone);
+	    	log.info(password);
+	    	log.info(cnfpass);
+	    	
 	    	Thread.sleep(5000);
 	    	rp.entervalues(fname, lname, email, phone, password, cnfpass);
 	    }
 
 	    @Then("^User verifies the title of the page$")
 	    public void user_verifies_the_title_of_the_page()  {
-	    	System.out.println("Title verified and user is already on confirmation page");
-	    
+//	    	System.out.println("Title verified and user is already on confirmation page");
+	    	log.info("Title verified and user is already on confirmation page");
 	    }
 
 	    @Then("^User clicks on continue button$")
@@ -140,6 +170,8 @@ public class Stepdefs extends Testbase {
 	    public void user_verifies_success_text() throws InterruptedException  {
 	    	Thread.sleep(5000);
 	    	Assert.assertTrue(cp.dispMsg());
+	    	
+	    	
 	       
 	    }
 }

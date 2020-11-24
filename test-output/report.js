@@ -14,6 +14,9 @@ formatter.scenario({
     }
   ]
 });
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
   "name": "User is already on the Ninja Page",
   "keyword": "Given "
@@ -40,7 +43,12 @@ formatter.after({
 formatter.scenarioOutline({
   "name": "To Register user",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@multiple"
+    }
+  ]
 });
 formatter.step({
   "name": "User is already on the Ninja Page",
@@ -103,9 +111,9 @@ formatter.examples({
     },
     {
       "cells": [
-        "Dboss47",
-        "Great",
-        "Dbossgreat47@xyz.com",
+        "DBoss",
+        "Great123",
+        "Dbossgreat47123@xyz.com",
         "8408718271",
         "DarshanKA47",
         "DarshanKA47"
@@ -116,7 +124,15 @@ formatter.examples({
 formatter.scenario({
   "name": "To Register user",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@multiple"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User is already on the Ninja Page",
@@ -159,7 +175,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User Enters the values \"Dboss47\" and \"Great\" and \"Dbossgreat47@xyz.com\" and \"8408718271\" and \"DarshanKA47\" and \"DarshanKA47\"",
+  "name": "User Enters the values \"DBoss\" and \"Great123\" and \"Dbossgreat47123@xyz.com\" and \"8408718271\" and \"DarshanKA47\" and \"DarshanKA47\"",
   "keyword": "Then "
 });
 formatter.match({
@@ -196,8 +212,7 @@ formatter.match({
   "location": "Stepdefs.user_is_on_the_account_confirmation_page()"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: expected [Your Account Has Been Created!] but found [Register Account]\r\n\tat org.testng.Assert.fail(Assert.java:96)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:137)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:453)\r\n\tat org.testng.Assert.assertEquals(Assert.java:463)\r\n\tat Step_defs.Stepdefs.user_is_on_the_account_confirmation_page(Stepdefs.java:67)\r\n\tat ✽.User is on the Account confirmation page(./Features/first.feature:16)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "User verifies the title of the page",
@@ -207,7 +222,7 @@ formatter.match({
   "location": "Stepdefs.user_verifies_the_title_of_the_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "User verifies success text",
@@ -217,7 +232,7 @@ formatter.match({
   "location": "Stepdefs.user_verifies_success_text()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "User clicks on continue button",
@@ -227,6 +242,132 @@ formatter.match({
   "location": "Stepdefs.user_clicks_on_continue_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "To Verify the Login Functionality",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@login"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User is already on Ninja page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "Logindefs.user_is_already_on_Ninja_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks on My account user is able to see Login button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "Logindefs.user_clicks_on_My_account_user_is_able_to_see_Login_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks on the Login Button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Logindefs.user_clicks_on_the_Login_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User lands on the Login page",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Logindefs.user_lands_on_the_Login_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User enters the email address",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Logindefs.user_enters_the_email_address()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User enters the password",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Logindefs.user_enters_the_password()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks on the login button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Logindefs.user_clicks_on_the_login_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User must be on the account page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Logindefs.user_must_be_on_the_account_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks on account button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Logindefs.user_clicks_on_account_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks on the Logout button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Logindefs.user_clicks_on_the_Logout_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User must be on the Logout page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Logindefs.user_must_be_on_the_Logout_page()"
+});
+formatter.result({
+  "status": "passed"
 });
 });

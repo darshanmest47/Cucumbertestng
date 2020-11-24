@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="65119" started-at="2020-11-20T10:32:31Z" finished-at="2020-11-20T10:33:37Z">
+  <suite name="Suite" duration-ms="79946" started-at="2020-11-24T12:39:53Z" finished-at="2020-11-24T12:41:12Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="65119" started-at="2020-11-20T10:32:31Z" finished-at="2020-11-20T10:33:37Z">
+    <test name="Test" duration-ms="79946" started-at="2020-11-24T12:39:53Z" finished-at="2020-11-24T12:41:12Z">
       <class name="org.com.test.Testrunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:org.com.test.Testrunner@42a48628]" name="setUpClass" is-config="true" duration-ms="168" started-at="2020-11-20T10:32:31Z" finished-at="2020-11-20T10:32:32Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:org.com.test.Testrunner@515c6049]" name="setUpClass" is-config="true" duration-ms="154" started-at="2020-11-24T12:39:53Z" finished-at="2020-11-24T12:39:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:org.com.test.Testrunner@42a48628]" name="feature" duration-ms="13303" started-at="2020-11-20T10:32:32Z" data-provider="features" finished-at="2020-11-20T10:32:45Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:org.com.test.Testrunner@515c6049]" name="feature" duration-ms="9823" started-at="2020-11-24T12:39:53Z" data-provider="features" finished-at="2020-11-24T12:40:03Z">
           <params>
             <param index="0">
               <value>
@@ -27,7 +27,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:org.com.test.Testrunner@42a48628]" name="feature" duration-ms="43720" started-at="2020-11-20T10:32:47Z" data-provider="features" finished-at="2020-11-20T10:33:30Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:org.com.test.Testrunner@515c6049]" name="feature" duration-ms="39200" started-at="2020-11-24T12:40:03Z" data-provider="features" finished-at="2020-11-24T12:40:43Z">
           <params>
             <param index="0">
               <value>
@@ -40,27 +40,26 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Your Account Has Been Created!] but found [Register Account]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Your Account Has Been Created!] but found [Register Account]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at org.testng.Assert.assertEquals(Assert.java:463)
-at Step_defs.Stepdefs.user_is_on_the_account_confirmation_page(Stepdefs.java:67)
-at ✽.User is on the Account confirmation page(./Features/first.feature:16)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:org.com.test.Testrunner@42a48628]" name="tearDownClass" is-config="true" duration-ms="151" started-at="2020-11-20T10:33:36Z" finished-at="2020-11-20T10:33:37Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:org.com.test.Testrunner@515c6049]" name="feature" duration-ms="28117" started-at="2020-11-24T12:40:43Z" data-provider="features" finished-at="2020-11-24T12:41:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To Verify the Login Functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Tutorials Ninja Page Check"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:org.com.test.Testrunner@515c6049]" name="tearDownClass" is-config="true" duration-ms="52" started-at="2020-11-24T12:41:12Z" finished-at="2020-11-24T12:41:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
