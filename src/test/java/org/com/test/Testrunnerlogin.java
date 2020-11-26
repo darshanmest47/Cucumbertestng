@@ -1,6 +1,5 @@
 package org.com.test;
 
-import org.junit.runner.RunWith;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -11,13 +10,7 @@ import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.PickleEventWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
 
-
-
-
-
-
-//@RunWith(Cucumber.class)
-@CucumberOptions(features = "./Features/first.feature",
+@CucumberOptions(features = "./Features/login.feature",
 glue = "Step_defs",
 plugin = {"html:test-output","json:josn-data/cucumber-json-report.json"},
 //tags = "@smoke",
@@ -26,9 +19,8 @@ dryRun = false,
 monochrome = true
 )
 
-public class Testrunner  {
-   
-
+public class Testrunnerlogin {
+	
 	 private TestNGCucumberRunner testNGCucumberRunner;
 	    
 	    @BeforeClass(alwaysRun = true)
@@ -52,5 +44,6 @@ public class Testrunner  {
 	    public void tearDownClass() throws Exception {    	
 	        testNGCucumberRunner.finish();        
 	    }
+
 
 }

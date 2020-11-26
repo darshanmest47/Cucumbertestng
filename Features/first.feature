@@ -24,19 +24,7 @@ Scenario Outline: To Register user
 	| fname | lname | email | phone | password | cnfpass |
 	| DBoss | Great123 | Dbossgreat47123@xyz.com |8408718271| DarshanKA47 | DarshanKA47 |
 
-@login
-Scenario: To Verify the Login Functionality
-    Given User is already on Ninja page
-    When User clicks on My account user is able to see Login button
-    And User clicks on the Login Button
-    And User lands on the Login page
-    Then User enters the email address
-    And User enters the password
-    And User clicks on the login button
-    Then User must be on the account page
-    Then User clicks on account button
-    And User clicks on the Logout button
-    Then User must be on the Logout page
+
 
 
 
