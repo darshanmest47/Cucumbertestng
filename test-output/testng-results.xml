@@ -1,79 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="154071" started-at="2020-11-26T05:31:34Z" finished-at="2020-11-26T05:34:08Z">
+  <suite name="Default suite" duration-ms="747" started-at="2020-11-30T13:18:23Z" finished-at="2020-11-30T13:18:24Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="154071" started-at="2020-11-26T05:31:34Z" finished-at="2020-11-26T05:34:08Z">
-      <class name="org.com.test.Testrunnerlogin">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:org.com.test.Testrunnerlogin@5fe94a96]" name="setUpClass" is-config="true" duration-ms="2" started-at="2020-11-26T05:33:35Z" finished-at="2020-11-26T05:33:35Z">
+    <test name="Default test" duration-ms="747" started-at="2020-11-30T13:18:23Z" finished-at="2020-11-30T13:18:24Z">
+      <class name="com.test.utilities.Excelwriter">
+        <test-method status="PASS" signature="writeData()[pri:0, instance:com.test.utilities.Excelwriter@1198b989]" name="writeData" duration-ms="694" started-at="2020-11-30T13:18:23Z" finished-at="2020-11-30T13:18:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:org.com.test.Testrunnerlogin@5fe94a96]" name="feature" duration-ms="32072" started-at="2020-11-26T05:33:35Z" data-provider="features" finished-at="2020-11-26T05:34:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["To Verify the Login Functionality"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Tutorials Ninja Login check"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:org.com.test.Testrunnerlogin@5fe94a96]" name="tearDownClass" is-config="true" duration-ms="14" started-at="2020-11-26T05:34:08Z" finished-at="2020-11-26T05:34:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- org.com.test.Testrunnerlogin -->
-      <class name="org.com.test.Testrunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:org.com.test.Testrunner@639c2c1d]" name="setUpClass" is-config="true" duration-ms="395" started-at="2020-11-26T05:31:34Z" finished-at="2020-11-26T05:31:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:org.com.test.Testrunner@639c2c1d]" name="feature" duration-ms="31447" started-at="2020-11-26T05:31:35Z" data-provider="features" finished-at="2020-11-26T05:32:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["To Verify Ninja page is displayed"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Tutorials Ninja Page Check"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:org.com.test.Testrunner@639c2c1d]" name="feature" duration-ms="84962" started-at="2020-11-26T05:32:07Z" data-provider="features" finished-at="2020-11-26T05:33:32Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["To Register user"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Tutorials Ninja Page Check"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:org.com.test.Testrunner@639c2c1d]" name="tearDownClass" is-config="true" duration-ms="226" started-at="2020-11-26T05:33:34Z" finished-at="2020-11-26T05:33:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- org.com.test.Testrunner -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- writeData -->
+      </class> <!-- com.test.utilities.Excelwriter -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
