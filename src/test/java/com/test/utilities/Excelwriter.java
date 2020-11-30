@@ -17,8 +17,7 @@ import org.testng.annotations.Test;
 public class Excelwriter {
 	
 	
-	
-	@Test
+
 	public void writeData() throws IOException {
 	
 		

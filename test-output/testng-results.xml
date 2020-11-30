@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="747" started-at="2020-11-30T13:18:23Z" finished-at="2020-11-30T13:18:24Z">
+  <suite name="Default suite" duration-ms="1201" started-at="2020-11-30T13:24:56Z" finished-at="2020-11-30T13:24:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="747" started-at="2020-11-30T13:18:23Z" finished-at="2020-11-30T13:18:24Z">
+    <test name="Default test" duration-ms="1201" started-at="2020-11-30T13:24:56Z" finished-at="2020-11-30T13:24:57Z">
       <class name="com.test.utilities.Excelwriter">
-        <test-method status="PASS" signature="writeData()[pri:0, instance:com.test.utilities.Excelwriter@1198b989]" name="writeData" duration-ms="694" started-at="2020-11-30T13:18:23Z" finished-at="2020-11-30T13:18:24Z">
+        <test-method status="PASS" signature="writeData()[pri:0, instance:com.test.utilities.Excelwriter@7f9e8421]" name="writeData" duration-ms="1116" started-at="2020-11-30T13:24:56Z" finished-at="2020-11-30T13:24:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- writeData -->
